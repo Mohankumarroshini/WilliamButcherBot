@@ -141,7 +141,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
 )
 
 home_text_pm = (
-        f"ʜᴇʏ ᴛʜᴇʀᴇ! ᴍʏ ɴᴀᴍᴇ ɪs {BOT_NAME} [🧜](https://telegra.ph/file/60296d9277e3b63308231.jpg) . ɪ ᴄᴀɴ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ "
+        f"ʜᴇʏ ᴛʜᴇʀᴇ! ᴍʏ ɴᴀᴍᴇ ɪs {BOT_NAME} [🧜](https://telegra.ph/file/05430047235c42abc7a57.jpg) . ɪ ᴄᴀɴ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ "
         + "ɢʀᴏᴜᴘ ᴡɪᴛʜ ʟᴏᴛs ᴏғ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs, ғᴇᴇʟ ғʀᴇᴇ ᴛᴏ "
         + "ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ."
 )
@@ -276,7 +276,7 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-        """☘︎. ʜᴇʟᴘ {first_name}, ᴍʏ ɴᴀᴍᴇ ɪs {bot_name} [🧜](https://telegra.ph/file/38aae066e250f583f0a88.jpg) .
+        """☘︎. ʜᴇʟᴘ {first_name}, ᴍʏ ɴᴀᴍᴇ ɪs {bot_name} [🧜](https://telegra.ph/file/5b037363877261aa2ae4b.jpg) .
 
 ☘︎. ɪ'ᴍ ᴀ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ  ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
 
@@ -318,7 +318,7 @@ async def help_button(client, query):
     back_match = re.match(r"help_back", query.data)
     create_match = re.match(r"help_create", query.data)
     top_text = f"""
-☘︎. ʜᴇʟʟᴏ {query.from_user.first_name}, ᴍʏ ɴᴀᴍᴇ ɪs {BOT_NAME} [🧜](https://telegra.ph/file/38aae066e250f583f0a88.jpg) .
+☘︎. ʜᴇʟʟᴏ {query.from_user.first_name}, ᴍʏ ɴᴀᴍᴇ ɪs {BOT_NAME} [🧜](https://telegra.ph/file/5b037363877261aa2ae4b.jpg) .
 
 ☘︎. ɪ'ᴍ ᴀ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
 
