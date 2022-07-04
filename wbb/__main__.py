@@ -115,25 +115,25 @@ home_keyboard_pm = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                text="Commands ❓", callback_data="bot_commands"
+                text="ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs🌟", callback_data="bot_commands"
             ),
             InlineKeyboardButton(
-                text="Repo 🛠",
-                url="https://github.com/thehamkercat/WilliamButcherBot",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="System Stats 🖥",
-                callback_data="stats_callback",
-            ),
-            InlineKeyboardButton(
-                text="Support 👨", url="http://t.me/WBBSupport"
+                text="ᴏᴡɴᴇʀ🤴",
+                url="https://t.me/TheOlympusOwner",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="Add Me To Your Group 🎉",
+                text="ᴜᴘᴅᴀᴛᴇs🧞",
+                url="https://t.me/olympusXnetwork",
+            ),
+            InlineKeyboardButton(
+                text="sᴜᴘᴘᴏʀᴛ🧚", url="http://t.me/OlympusChatting"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ🌟",
                 url=f"http://t.me/{BOT_USERNAME}?startgroup=new",
             )
         ],
@@ -150,20 +150,20 @@ keyboard = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                text="Help ❓",
+                text="ʜᴇʟᴘ🏋️",
                 url=f"t.me/{BOT_USERNAME}?start=help",
             ),
             InlineKeyboardButton(
-                text="Repo 🛠",
-                url="https://github.com/thehamkercat/WilliamButcherBot",
+                text="ᴏᴡɴᴇʀ🤴",
+                url="https://t.me/TheOlympusOwner",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="System Stats 💻",
-                callback_data="stats_callback",
+                text="ᴜᴘᴅᴀᴛᴇs🧞",
+                url="https://t.me/olympusXnetwork",
             ),
-            InlineKeyboardButton(text="Support 👨", url="t.me/WBBSupport"),
+            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ🧚", url="t.me/OlympusChatting"),
         ],
     ]
 )
@@ -173,7 +173,7 @@ keyboard = InlineKeyboardMarkup(
 async def start(_, message):
     if message.chat.type != "private":
         return await message.reply(
-            "Pm Me For More Details.", reply_markup=keyboard
+            "ᴘᴍ ᴍᴇ ғᴏʀ ᴍᴏʀᴇ ᴅᴇᴛᴀɪʟs.", reply_markup=keyboard
         )
     if len(message.text.split()) > 1:
         name = (message.text.split(None, 1)[1]).lower()
@@ -184,7 +184,7 @@ async def start(_, message):
         elif "_" in name:
             module = name.split("_", 1)[1]
             text = (
-                    f"Here is the help for **{HELPABLE[module].__MODULE__}**:\n"
+                    f"ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ **{HELPABLE[module].__MODULE__}**:\n"
                     + HELPABLE[module].__HELP__
             )
             await message.reply(text, disable_web_page_preview=True)
@@ -212,30 +212,30 @@ async def help_command(_, message):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Click here",
+                                text="ᴄʟɪᴄᴋ ʜᴇʀᴇ",
                                 url=f"t.me/{BOT_USERNAME}?start=help_{name}",
                             )
                         ],
                     ]
                 )
                 await message.reply(
-                    f"Click on the below button to get help about {name}",
+                    f"ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ʜᴇʟᴘ ᴀʙᴏᴜᴛ {name}",
                     reply_markup=key,
                 )
             else:
                 await message.reply(
-                    "PM Me For More Details.", reply_markup=keyboard
+                    "ᴘᴍ ᴍᴇ ғᴏʀ ᴍᴏʀᴇ ᴅᴇᴛᴀɪʟs.", reply_markup=keyboard
                 )
         else:
             await message.reply(
-                "Pm Me For More Details.", reply_markup=keyboard
+                "ᴘᴍ ᴍᴇ ғᴏʀ ᴍᴏʀᴇ ᴅᴇᴛᴀɪʟs.", reply_markup=keyboard
             )
     else:
         if len(message.command) >= 2:
             name = (message.text.split(None, 1)[1]).replace(" ", "_").lower()
             if str(name) in HELPABLE:
                 text = (
-                        f"Here is the help for **{HELPABLE[name].__MODULE__}**:\n"
+                        f"ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ **{HELPABLE[name].__MODULE__}**:\n"
                         + HELPABLE[name].__HELP__
                 )
                 await message.reply(text, disable_web_page_preview=True)
@@ -306,15 +306,17 @@ I'm a group management bot with some usefule features.
 You can choose an option below, by clicking a button.
 Also you can ask anything in Support Group.
 
-General command are:
- - /start: Start the bot
- - /help: Give this message
+ɢᴇɴᴇʀᴀʟ ᴄᴏᴍᴍᴀɴᴅs ᴀʀᴇ : 
+
+☘︎. /start: Start the bot
+ 
+☘︎. /help: Give this message
  """
     if mod_match:
         module = (mod_match.group(1)).replace(" ", "_")
         text = (
                 "{} **{}**:\n".format(
-                    "Here is the help for", HELPABLE[module].__MODULE__
+                    "ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴏ ғᴏʀ", HELPABLE[module].__MODULE__
                 )
                 + HELPABLE[module].__HELP__
         )
@@ -322,7 +324,7 @@ General command are:
         await query.message.edit(
             text=text,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("back", callback_data="help_back")]]
+                [[InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help_back")]]
             ),
             disable_web_page_preview=True,
         )
