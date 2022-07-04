@@ -141,9 +141,9 @@ home_keyboard_pm = InlineKeyboardMarkup(
 )
 
 home_text_pm = (
-        f"Hey there! My name is {BOT_NAME}. I can manage your "
-        + "group with lots of useful features, feel free to "
-        + "add me to your group."
+        f"ʜᴇʏ ᴛʜᴇʀᴇ! ᴍʏ ɴᴀᴍᴇ ɪs {BOT_NAME}. ɪ ᴄᴀɴ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ "
+        + "ɢʀᴏᴜᴘ ᴡɪᴛʜ ʟᴏᴛs ᴏғ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs, ғᴇᴇʟ ғʀᴇᴇ ᴛᴏ "
+        + "ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ."
 )
 
 keyboard = InlineKeyboardMarkup(
@@ -262,10 +262,10 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-        """Hello {first_name}, My name is {bot_name}.
-I'm a group management bot with some useful features.
-You can choose an option below, by clicking a button.
-Also you can ask anything in Support Group.
+        """ʜᴇʟᴘ {first_name}, ᴍʏ ɴᴀᴍᴇ ɪs {bot_name}.
+ɪ'ᴍ ᴀ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ  ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
+ʏᴏᴜ ᴄᴀɴ ᴄʜᴏᴏsᴇ ᴀɴ ᴏᴘᴛɪᴏɴ ʙᴇʟᴏᴡ, ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴀ ʙᴜᴛᴛᴏɴ.
+ᴀʟsᴏ ʏᴏᴜ ᴄᴀɴ ᴀsᴋ ᴀɴʏ ᴅᴏᴜʙᴛs ᴀʙᴏᴜᴛ ᴏᴜʀ ʙᴏᴛ ɪɴ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ.
 """.format(
             first_name=name,
             bot_name=BOT_NAME,
@@ -301,16 +301,16 @@ async def help_button(client, query):
     back_match = re.match(r"help_back", query.data)
     create_match = re.match(r"help_create", query.data)
     top_text = f"""
-Hello {query.from_user.first_name}, My name is {BOT_NAME}.
-I'm a group management bot with some usefule features.
-You can choose an option below, by clicking a button.
-Also you can ask anything in Support Group.
+ʜᴇʟʟᴏ {query.from_user.first_name}, ᴍʏ ɴᴀᴍᴇ ɪs {BOT_NAME}.
+ɪ'ᴍ ᴀ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
+ʏᴏᴜ ᴄᴀɴ ᴄʜᴏᴏsᴇ ᴀɴ ᴏᴘᴛɪᴏɴ ʙᴇʟᴏᴡ, ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴀ ʙᴜᴛᴛᴏɴ.
+ᴀʟsᴏ ʏᴏᴜ ᴄᴀɴ ᴀsᴋ ᴀɴʏ ᴅᴏᴜʙᴛ ᴀʙᴏᴜᴛ ᴏᴜʀ ʙᴏᴛs ɪɴ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ.
 
 ɢᴇɴᴇʀᴀʟ ᴄᴏᴍᴍᴀɴᴅs ᴀʀᴇ : 
 
-☘︎. /start: Start the bot
+☘︎. /start : sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ
  
-☘︎. /help: Give this message
+☘︎. /help : ɢɪᴠᴇ ᴛʜɪs ᴍᴇssᴀɢᴇ
  """
     if mod_match:
         module = (mod_match.group(1)).replace(" ", "_")
