@@ -146,6 +146,20 @@ home_text_pm = (
         + "ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ."
 )
 
+home_image_pm = ( "https://telegra.ph/file/05430047235c42abc7a57.jpg"
+
+"https://telegra.ph/file/28af409e1a9f763c786f9.jpg"
+
+"https://telegra.ph/file/5b037363877261aa2ae4b.jpg"
+
+"https://telegra.ph/file/7a79f0f80050279df0d00.jpg"
+
+"https://telegra.ph/file/da98d335b819cf0265e45.jpg"
+
+"https://telegra.ph/file/c64b40390ff6534f97fa5.jpg"
+
+"https://telegra.ph/file/01964bc2764770368eb75.jpg" )
+
 keyboard = InlineKeyboardMarkup(
     [
         [
@@ -318,6 +332,8 @@ async def help_button(client, query):
  
 ☘︎. /help : ɢɪᴠᴇ ᴛʜɪs ᴍᴇssᴀɢᴇ
  """
+	
+	
     if mod_match:
         module = (mod_match.group(1)).replace(" ", "_")
         text = (
