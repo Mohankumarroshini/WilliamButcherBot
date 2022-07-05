@@ -210,7 +210,7 @@ async def start(_, message):
             )
     else:
         await message.reply(
-            home_text_pm,
+            home_text_pm,home_image_pm
             reply_markup=home_keyboard_pm,
         )
     return
