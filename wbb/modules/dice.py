@@ -21,6 +21,6 @@ async def throw_dice(client, message: Message):
 
     m = await client.send_dice(c, "🎲")
 
-    while m.dice.value != 6:
+    while m.dice.value != 1:
         await m.delete()
         m = await client.send_dice(c, "🎲")
