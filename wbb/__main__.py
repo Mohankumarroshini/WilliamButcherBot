@@ -278,7 +278,7 @@ async def help_parser(name, keyboard=None):
     return (
         """☘︎. ʜᴇʟᴘ {first_name}, ᴍʏ ɴᴀᴍᴇ ɪs {bot_name} [🧜](https://telegra.ph/file/5b037363877261aa2ae4b.jpg) .
 
-☘︎. ɪ'ᴍ ᴀ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ  ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
+☘︎. ɪ'ᴍ ᴀ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ  ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs [🌟](https://telegra.ph/file/5b037363877261aa2ae4b.jpg) .
 
 ☘︎. ʏᴏᴜ ᴄᴀɴ ᴄʜᴏᴏsᴇ ᴀɴ ᴏᴘᴛɪᴏɴ ʙᴇʟᴏᴡ, ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴀ ʙᴜᴛᴛᴏɴ.
 
