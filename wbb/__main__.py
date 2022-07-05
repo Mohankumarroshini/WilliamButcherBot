@@ -276,7 +276,7 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-        """☘︎. ʜᴇʟᴘ {query.from_user.first_name}, ᴍʏ ɴᴀᴍᴇ ɪs {bot_name} [🧜](https://telegra.ph/file/5b037363877261aa2ae4b.jpg) .
+        """☘︎. ʜᴇʟᴘ {first_name}, ᴍʏ ɴᴀᴍᴇ ɪs {bot_name} [🧜](https://telegra.ph/file/5b037363877261aa2ae4b.jpg) .
 
 ☘︎. ɪ'ᴍ ᴀ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ  ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
 
